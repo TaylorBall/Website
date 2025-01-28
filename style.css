@@ -1,0 +1,84 @@
+/* Add your CSS styles here to customize the appearance of your website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #0074d9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0074d9;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Default styles for larger screens */
+body {
+    /* Your existing styles here */
+}
+
+/* Navigation menu for smaller screens */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initially hidden */
+    transition: right 0.3s ease-in-out;
+}
+
+nav.show ul {
+    right: 0; /* Display the menu */
+}
+
+nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add some spacing between links */
+}
+
+nav-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #0074d9;
+    color: #fff;
+    border-radius: 50%;
+}
+
